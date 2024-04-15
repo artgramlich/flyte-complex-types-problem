@@ -20,9 +20,9 @@ RUN pip install -r /root/requirements.txt
 # Copy the actual code
 COPY . /root
 
-# Add debugging
-RUN cp debugging-files/flytekitplugins/pydantic/basemodel_transformer.py /opt/venv/lib/python3.12/site-packages/flytekitplugins/pydantic/basemodel_transformer.py \
-    && cp debugging-files/flytekit/core/base_task.py /opt/venv/lib/python3.12/site-packages/flytekit/core/base_task.py
+# Add debugging changes
+#RUN cp debugging-files/flytekitplugins/pydantic/basemodel_transformer.py /opt/venv/lib/python3.12/site-packages/flytekitplugins/pydantic/basemodel_transformer.py \
+#    && cp debugging-files/flytekit/core/base_task.py /opt/venv/lib/python3.12/site-packages/flytekit/core/base_task.py
 
 
 # This tag is supplied by the build script and will be used to determine the version
